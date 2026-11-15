@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f \"$CLAUDE_PROJECT_DIR/USER.md\" ] || echo 'Life OS is not set up yet (USER.md is missing). Before anything else, run the onboarding skill at .claude/skills/onboarding/SKILL.md and interview the user.'"
+          }
+        ]
+      }
+    ]
+  }
+}

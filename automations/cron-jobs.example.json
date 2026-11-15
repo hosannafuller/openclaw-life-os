@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "agentId": "{{PRIMARY_SLUG}}",
+      "name": "Daily plan",
+      "enabled": true,
+      "schedule": { "kind": "cron", "expr": "{{MORNING_CRON_EXPR}}", "tz": "{{TIMEZONE}}" },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run the daily-plan skill for {{PRIMARY_NAME}}. Look up accounts and the chat ID in USER.md and their profile. Save the plan to outputs/daily-plans/ and send the compact summary (TL;DR, Today's Three, Home & Life) to their delivery channel. No markdown tables."
+      },
+      "delivery": { "mode": "announce", "channel": "{{DELIVERY_CHANNEL}}", "to": "{{DELIVERY_CHANNEL}}:{{PRIMARY_CHAT_ID}}" }
+    },
+    {
+      "agentId": "{{PARTNER_SLUG}}",
+      "name": "Daily plan (partner)",
+      "enabled": false,
+      "schedule": { "kind": "cron", "expr": "{{MORNING_CRON_EXPR}}", "tz": "{{TIMEZONE}}" },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run the daily-plan skill for {{PARTNER_NAME}}. Use only their accounts and the shared account. Save to outputs/daily-plans/{{PARTNER_SLUG}}-YYYY-MM-DD-daily-plan.md and send the plan to their delivery channel. No markdown tables."
+      },
+      "delivery": { "mode": "announce", "channel": "{{DELIVERY_CHANNEL}}", "to": "{{DELIVERY_CHANNEL}}:{{PARTNER_CHAT_ID}}" }
+    },
+    {
+      "agentId": "{{PRIMARY_SLUG}}",
+      "name": "Budget auto-categorise",
+      "enabled": false,
+      "schedule": { "kind": "cron", "expr": "0 6 * * *", "tz": "{{TIMEZONE}}" },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": { "kind": "agentTurn", "message": "Run the budget-autocategorize skill. Stay silent unless it says to report." }
+    },
+    {
+      "agentId": "{{PRIMARY_SLUG}}",
+      "name": "One-off reminder (example)",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "schedule": { "kind": "at", "at": "{{ISO_DATETIME}}" },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": { "kind": "agentTurn", "message": "Send {{PRIMARY_NAME}} this reminder on their delivery channel: '{{REMINDER_TEXT}}'" },
+      "delivery": { "mode": "announce", "channel": "{{DELIVERY_CHANNEL}}", "to": "{{DELIVERY_CHANNEL}}:{{PRIMARY_CHAT_ID}}" }
+    }
+  ]
+}

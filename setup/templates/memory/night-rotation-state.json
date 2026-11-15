@@ -1,0 +1,5 @@
+{
+  "lastUpdated": "{{TODAY}}",
+  "tonightDuty": "unknown",
+  "notes": "Partners alternate night duty. The on-duty parent owns wind-down, overnight wake-ups, and the first morning feed. Set tonightDuty to a person slug each evening. The daily plan asks if this is stale."
+}

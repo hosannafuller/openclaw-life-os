@@ -1,0 +1,96 @@
+# Fair Play Card Assignments
+
+Based on the Fair Play system by Eve Rodsky. The card names belong to that system, so
+this template ships without them. Use your own deck (or your own list of household
+responsibilities) and fill in who holds what.
+
+Last updated: {{TODAY}}
+
+**Player 1 = {{PRIMARY_NAME}} | Player 2 = {{PARTNER_NAME}}**
+
+---
+
+## {{PRIMARY_NAME}}'s cards
+
+### Home
+- {{CARD}}
+
+### Out
+- {{CARD}}
+
+### Caregiving
+- {{CARD}}
+
+### Magic
+- {{CARD}}
+
+---
+
+## {{PARTNER_NAME}}'s cards
+
+### Home
+- {{CARD}}
+
+### Out
+- {{CARD}}
+
+### Caregiving
+- {{CARD}}
+
+### Magic
+- {{CARD}}
+
+---
+
+## Shared / split
+
+- {{CARD}} — {{HOW_IT_IS_SPLIT}}
+
+## Not in play
+
+- {{CARD}}
+
+---
+
+## Weekly rhythm (drives the Home & Life section of the daily plan)
+
+| Day | {{PRIMARY_NAME}} | {{PARTNER_NAME}} | Work location |
+|-----|------------------|------------------|---------------|
+| Mon | {{TASKS_WITH_TIMES}} | {{TASKS_WITH_TIMES}} | {{WHO_IS_WHERE}} |
+| Tue | | | |
+| Wed | | | |
+| Thu | | | |
+| Fri | | | |
+| Sat | | | |
+| Sun | | | |
+
+## Weekly meal schedule
+
+| Day | Dinner | Owner | Start | Ready | Notes |
+|-----|--------|-------|-------|-------|-------|
+| Mon | {{MEAL}} | {{WHO}} | {{TIME}} | {{TIME}} | |
+
+## Recurring chore schedule
+
+The daily plan checks today's date against this table. Anything due today appears in
+Home & Life. Anything due tomorrow appears in Heads Up. Use this table for anything
+less frequent than weekly instead of creating a cron job.
+
+| Chore | Schedule | Due dates | Owner | Notes |
+|-------|----------|-----------|-------|-------|
+| 🛏️ Wash bedsheets | Every 2 weeks | 8th and 22nd | {{WHO}} | |
+| 🫧 Sanitise dishwasher | Monthly | 15th | {{WHO}} | |
+| 🔑 Google auth warm-up | Monthly | 1st | agent | Run one `gog calendar list` per connected account so refresh tokens stay alive |
+| {{CHORE}} | {{SCHEDULE}} | {{DATES}} | {{WHO}} | |
+
+## Standing reminders already scheduled
+
+| Day | Time | Who | Reminder |
+|-----|------|-----|----------|
+| {{DAY}} | {{TIME}} | {{WHO}} | {{REMINDER}} |
+
+## Reshuffle log
+
+| Date | What changed |
+|------|--------------|
+| {{TODAY}} | Initial deal |

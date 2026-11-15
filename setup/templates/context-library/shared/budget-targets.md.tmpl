@@ -1,0 +1,46 @@
+# Shared Household Budget Targets
+
+Monthly targets by category. The daily plan shows % used against these.
+
+## Transaction source
+
+- **Sheet ID:** {{BUDGET_SHEET_ID}}  <!-- Google Sheet your budgeting app exports to -->
+- **Tab and range:** {{BUDGET_SHEET_RANGE}}  <!-- e.g. Primary!A1:P9000 -->
+- **Columns:** date = {{DATE_COL}}, amount = {{AMOUNT_COL}}, category = {{CATEGORY_COL}}
+- **Date format:** {{DATE_FORMAT}}  <!-- e.g. %m/%d/%Y -->
+- **Sign convention:** negative amount = spending
+- **Ignore categories:** Excluded, Transfer, Income
+
+## Fixed costs (shown as one line, not tracked against a budget)
+
+| Category | Monthly |
+|----------|---------|
+| Housing | {{AMOUNT}} |
+| Utilities | {{AMOUNT}} |
+| Insurance | {{AMOUNT}} |
+
+## Discretionary budgets
+
+| Category | Monthly budget | Notes |
+|----------|----------------|-------|
+| Groceries | {{AMOUNT}} | |
+| Eating out | {{AMOUNT}} | |
+| Transport | {{AMOUNT}} | |
+| Childcare | {{AMOUNT}} | |
+| Shopping | {{AMOUNT}} | |
+| Entertainment | {{AMOUNT}} | |
+| Subscriptions | {{AMOUNT}} | |
+| Holidays | {{AMOUNT}} | |
+| General | {{AMOUNT}} | Catch-all. Flag if over. |
+
+## Auto-categorisation rules
+
+Used by `budget-autocategorize` for transactions left in the catch-all category.
+
+| Merchant contains | Category |
+|-------------------|----------|
+| {{MERCHANT}} | {{CATEGORY}} |
+
+---
+
+*Last updated: {{TODAY}}*

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 695" width="880" height="695" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15">
+<title>Sample messages from the two Life OS agents (fictional household)</title>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#cfe3c4"/><stop offset="1" stop-color="#9cc59a"/></linearGradient></defs>
+<rect x="20" y="20" width="410" height="655" rx="22" fill="url(#bg)"/><path d="M20 70 V42 a22 22 0 0 1 22 -22 H408 a22 22 0 0 1 22 22 V70 Z" fill="#fff" opacity="0.93"/><text x="225.0" y="43" text-anchor="middle" font-weight="700" fill="#1c1c1e">Scout 🐺</text><text x="225.0" y="61" text-anchor="middle" font-size="12" fill="#6b7280">Alex’s agent</text>
+<rect x="32" y="84" width="362" height="286" rx="16" fill="#fff"/>
+<text fill="#1c1c1e"><tspan x="46" y="109" font-weight="700">💰 Budget check — October, day 14</tspan><tspan x="46" y="130">Variable spend: £1,480 vs £2,400 target</tspan><tspan x="46" y="151">Under by £920 so far ✅</tspan><tspan x="46" y="179" font-weight="700">🔴 Overspends</tspan><tspan x="46" y="200">• Entertainment £310 vs £250 (+£60)</tspan><tspan x="46" y="221">• Subscriptions £95 vs £60 (+£35)</tspan><tspan x="46" y="249" font-weight="700">🚩 Flags</tspan><tspan x="46" y="270">• £240 uncategorised across 9 transactions</tspan><tspan x="46" y="298" font-weight="700">🟢 Big wins</tspan><tspan x="46" y="319">• Groceries £210 vs £500</tspan><tspan x="46" y="340">• Eating out £180 vs £350</tspan></text>
+<text x="382" y="361" text-anchor="end" font-size="11" fill="#8e8e93">8:01 AM</text>
+<rect x="32" y="382" width="362" height="160" rx="16" fill="#fff"/>
+<text fill="#1c1c1e"><tspan x="46" y="407" font-weight="700">📆 Agreed to, but not on your calendar</tspan><tspan x="46" y="428">• Dinner at Priya’s, Sat 7pm. You said</tspan><tspan x="46" y="449">   yes in the group chat on Monday</tspan><tspan x="46" y="470">• You’re hosting book club on the 24th</tspan><tspan x="46" y="491">⚠️ Saturday clashes with Sam’s match</tspan><tspan x="46" y="512">Add them?</tspan></text>
+<text x="382" y="533" text-anchor="end" font-size="11" fill="#8e8e93">8:25 AM</text>
+<rect x="32" y="554" width="362" height="76" rx="16" fill="#fff"/>
+<text fill="#1c1c1e"><tspan x="46" y="579">👥 You haven’t messaged Jo in 5 weeks.</tspan><tspan x="46" y="600">Want me to draft something?</tspan></text>
+<text x="382" y="621" text-anchor="end" font-size="11" fill="#8e8e93">10:30 AM</text>
+<rect x="450" y="20" width="410" height="655" rx="22" fill="url(#bg)"/><path d="M450 70 V42 a22 22 0 0 1 22 -22 H838 a22 22 0 0 1 22 22 V70 Z" fill="#fff" opacity="0.93"/><text x="655.0" y="43" text-anchor="middle" font-weight="700" fill="#1c1c1e">Juno 🐕</text><text x="655.0" y="61" text-anchor="middle" font-size="12" fill="#6b7280">Sam’s agent</text>
+<rect x="462" y="84" width="362" height="307" rx="16" fill="#fff"/>
+<text fill="#1c1c1e"><tspan x="476" y="109" font-weight="700">☀️ Daily plan — Tue 14 Oct</tspan><tspan x="476" y="130">Home today. You cook, pick-up is yours.</tspan><tspan x="476" y="158" font-weight="700">You own today</tspan><tspan x="476" y="179">🧺 Laundry 9am, put away by 3pm</tspan><tspan x="476" y="200">🍲 Start dinner 4:45pm</tspan><tspan x="476" y="221">🚲 Pick up Mia 5:45pm</tspan><tspan x="476" y="249" font-weight="700">Alex owns today</tspan><tspan x="476" y="270">🚲 Nursery drop-off 8:00</tspan><tspan x="476" y="291">🛒 Order Wednesday’s takeout</tspan><tspan x="476" y="319" font-weight="700">Shared</tspan><tspan x="476" y="340">🛏️ Bedsheets are due today</tspan><tspan x="476" y="361">🌙 Night duty: yours</tspan></text>
+<text x="812" y="382" text-anchor="end" font-size="11" fill="#8e8e93">8:00 AM</text>
+<rect x="462" y="403" width="362" height="76" rx="16" fill="#fff"/>
+<text fill="#1c1c1e"><tspan x="476" y="428">🍲 Start dinner now. It needs to be ready</tspan><tspan x="476" y="449">when you get back with Mia (~6pm)</tspan></text>
+<text x="812" y="470" text-anchor="end" font-size="11" fill="#8e8e93">4:45 PM</text>
+<rect x="462" y="491" width="362" height="76" rx="16" fill="#fff"/>
+<text fill="#1c1c1e"><tspan x="476" y="516">🚲 Leave for nursery now.</tspan><tspan x="476" y="537">Pick-up by 5:45pm ⏰</tspan></text>
+<text x="812" y="558" text-anchor="end" font-size="11" fill="#8e8e93">5:15 PM</text>
+<rect x="462" y="579" width="362" height="76" rx="16" fill="#fff"/>
+<text fill="#1c1c1e"><tspan x="476" y="604">⚖️ Alex has covered mornings 4 days</tspan><tspan x="476" y="625">running. Want a quick reshuffle check?</tspan></text>
+<text x="812" y="646" text-anchor="end" font-size="11" fill="#8e8e93">7:40 PM</text>
+</svg>

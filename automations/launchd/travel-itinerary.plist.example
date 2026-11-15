@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>{{LABEL_PREFIX}}.travel-itinerary</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>{{OPENCLAW_BIN}}</string>
+        <string>run</string>
+        <string>--prompt</string>
+        <string>Run the travel-itinerary-builder skill for {{PRIMARY_NAME}}. Look up accounts and the chat ID in USER.md.</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>{{WORKSPACE_PATH}}</string>
+    <!-- Sundays 09:03 -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Weekday</key>
+        <integer>0</integer>
+        <key>Hour</key>
+        <integer>9</integer>
+        <key>Minute</key>
+        <integer>3</integer>
+    </dict>
+    <key>StandardOutPath</key>
+    <string>{{HOME}}/Library/Logs/life-os-travel-itinerary.log</string>
+    <key>StandardErrorPath</key>
+    <string>{{HOME}}/Library/Logs/life-os-travel-itinerary.log</string>
+    <key>RunAtLoad</key>
+    <false/>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>HOME</key>
+        <string>{{HOME}}</string>
+    </dict>
+</dict>
+</plist>

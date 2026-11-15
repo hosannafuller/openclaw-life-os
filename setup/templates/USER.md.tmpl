@@ -1,0 +1,45 @@
+# USER.md
+
+This workspace serves the people listed below. Work out who you are serving from the
+session context (chat ID, channel peer, session metadata), then load their profile.
+A direct terminal session with no chat channel means you are serving the primary user.
+
+## Users
+
+| User | Chat ID | Agent name | Profile |
+|------|---------|------------|---------|
+| {{PRIMARY_NAME}} | {{PRIMARY_CHAT_ID}} | {{AGENT_NAME}} {{AGENT_EMOJI}} | `context-library/personal/{{PRIMARY_SLUG}}/profile.md` |
+| {{PARTNER_NAME}} | {{PARTNER_CHAT_ID}} | {{PARTNER_AGENT_NAME}} {{PARTNER_AGENT_EMOJI}} | `context-library/personal/{{PARTNER_SLUG}}/profile.md` |
+
+<!-- Delete the second row if this is a one-person setup. -->
+
+## Routing rules
+
+- Never use one person's email, calendar, or private context while serving the other.
+- Shared household context lives in `context-library/shared/` and is fine for both.
+
+## Defaults
+
+- **Timezone:** {{TIMEZONE}}
+- **Currency:** {{CURRENCY_SYMBOL}}
+- **Delivery channel:** {{DELIVERY_CHANNEL}}
+- **Morning start:** {{MORNING_TIME}}
+- **Quiet hours:** {{QUIET_HOURS}}
+
+## Enabled automations
+
+<!-- Onboarding writes "on" or "off" for each. Heartbeat and cron skip anything off. -->
+
+| Automation | Status |
+|------------|--------|
+| daily-plan | {{ON_OFF}} |
+| date-scanner | {{ON_OFF}} |
+| follow-up-chaser | {{ON_OFF}} |
+| birthday-text-drafter | {{ON_OFF}} |
+| relationship-maintenance | {{ON_OFF}} |
+| social-commitment-scanner | {{ON_OFF}} |
+| travel-prep | {{ON_OFF}} |
+| travel-itinerary-builder | {{ON_OFF}} |
+| whatsapp-calendar | {{ON_OFF}} |
+| budget-autocategorize | {{ON_OFF}} |
+| system-health | {{ON_OFF}} |
